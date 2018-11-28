@@ -1,0 +1,10 @@
+<p>선택해주세요</p>
+<select (change)='changeSelectedName($event.target.value)'>
+  <option *ngFor = 'let n of name'>{{n}}</option>
+</select>
+<hr/>
+
+<p>선택해주세요</p>
+<select (change)='changeAndOutPut($event.target.value)'>
+  <option *ngFor = 'let n of name'>{{n}}</option>
+</select>
